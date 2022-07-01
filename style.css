@@ -58,3 +58,10 @@
 li{    
     display: flex;
 }
+
+.juste{
+    background-color:green;
+    font-weight: bold;
+    height: 1px;
+
+}

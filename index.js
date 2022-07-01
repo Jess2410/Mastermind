@@ -4,7 +4,6 @@ let array = []
 for( let i = 0; i<4 ; i++){
     var randColor = colors[Math.floor(Math.random() * colors.length)];
     array.push(randColor)
-    console.log(array)
 }
 console.log(array)
 
@@ -34,6 +33,9 @@ let reponse = [];
 let form = document.querySelector('#form')
 form.addEventListener('submit',handlerSubmit)
 
+
+console.log(colors)
+
 function handlerSubmit (e){
     e.preventDefault()
     let input1 = document.getElementById("radio-value1").value;
@@ -44,11 +46,14 @@ function handlerSubmit (e){
 const list = document.querySelector('#list')
 const essai = document.createElement("li")
 
-if(JSON.stringify(reponse)==JSON.stringify(colors)){
-console.log("c'est trouvé")
-  }else{
-  console.log("réessayez !")
-}
+
+for(let i = 0 ; i<=colors.length-1; i++){
+    if(JSON.stringify(reponse[i])==JSON.stringify(colors[i])){
+        console.log(`${"bien placé :" }`,i )
+        // list.classList.add("juste")
+
+        }}
+
     reponse.forEach(element=> {
         let div = document.createElement("div")
         div.classList.add(element)
@@ -58,4 +63,4 @@ list.appendChild(essai);
 reponse=[]
 }
 
-
+console.log(colors)
