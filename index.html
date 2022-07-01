@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Mastermind</title>
+</head>
+<body>
+<div class="wrapper">
+    <div id="code"></div>
+    <form id="form" method="post">
+        <div id="colors1" class="radio-group">
+            <div id="bleu1" value="bleu" class="radio bleu"></div>
+            <div id="rouge1" value="rouge" class="radio rouge" ></div>
+            <div id="jaune1" value="jaune" class="radio jaune"></div>
+            <div id="vert1" value="vert" class="radio vert"></div>
+            <br/>
+            <input type="text" id="radio-value1" name="radio-value" hidden/>
+        </div>
+        <div id="colors2" class="radio-group">
+            <div id="bleu2" value="bleu" class="radio bleu"></div>
+            <div id="rouge2" value="rouge" class="radio rouge"></div>
+            <div id="jaune2" value="jaune" class="radio jaune"></div>
+            <div id="vert2" value="vert" class="radio vert"></div>
+            <br/>
+            <input type="text" id="radio-value2" name="radio-value"  hidden/>
+        </div>
+        <div id="colors3" class="radio-group">
+            <div id="bleu3" value="bleu" class="radio bleu"></div>
+            <div id="rouge3" value="rouge" class="radio rouge"></div>
+            <div id="jaune3" value="jaune" class="radio jaune"></div>
+            <div id="vert3" value="vert" class="radio vert"></div>
+            <br/>
+            <input type="text" id="radio-value3" name="radio-value"  hidden/>
+        </div>
+        <div id="colors4" class="radio-group">
+            <div id="bleu4" value="bleu" class="radio bleu"></div>
+            <div id="rouge4" value="rouge" class="radio rouge"></div>
+            <div id="jaune4" value="jaune" class="radio jaune"></div>
+            <div id="vert4" value="vert" class="radio vert"></div>
+            <br/>
+            <input type="text" id="radio-value4" name="radio-value"  hidden/>
+        </div>
+        <input type="submit" value=Valider />
+
+    </form>
+        <div id="list-group">
+            <ol id="list"></ol>
+        </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

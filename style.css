@@ -1,0 +1,60 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.bleu{
+        background-color: blue;
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        border: 1px black solid;
+        margin : 10px
+    }
+
+.vert{
+    background-color: rgb(17, 131, 36);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px black solid;
+    margin : 10px
+}
+.rouge{
+    background-color: rgb(255, 25, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px black solid;
+    margin : 10px
+}
+.jaune{
+    background-color: rgb(255, 255, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 1px black solid;
+    margin : 10px
+}
+#form{
+    display: flex;
+    width: 600px;
+    ;
+    justify-content: space-between;
+}
+#colors1,#colors2,#colors3,#colors4{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.radio{
+    cursor:pointer;
+}
+
+.radio.selected{
+    border: blue 2px solid !important;
+}
+
+li{    
+    display: flex;
+}
